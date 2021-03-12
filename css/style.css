@@ -40,24 +40,29 @@ body {
 }
 
 
-/* SIDE BAR [FLEX-ITEM] -----------------------------------*/
+/* SIDE BAR [FLEX-PARENT-ITEM] ----------------------------*/
 
 .sidebar {
     background-color: #000;
     flex-basis: 250px;
 }
 
+/* LOGO */
 .sidebar .logo {
     width: 150px;
     height: 100px;
 }
 
-
 .sidebar img {
     width: 100%;
     margin-top: 20px;
     margin-left: 20px;
+}
 
+/* BOTTOM COLUMN */
+
+.sidebar-bottom-item {
+    align-items: flex-end;
 }
 
 
@@ -66,9 +71,7 @@ body {
 
 
 
-
-
-/* MAIN CONTENT [FLEX-ITEM] -------------------------------*/
+/* MAIN CONTENT [FLEX-PARENT-ITEM] ------------------------*/
 
 .main-content {
     background-color: #141922;
