@@ -59,6 +59,13 @@ body {
     margin-left: 20px;
 }
 
+
+/* SIDEBAR  IN-CONTAINER */
+
+.sidebar-in-container {
+    height: 90%;
+}
+
 /* TOP COLUMN */
 
 .sidebar-top-item {
