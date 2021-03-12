@@ -59,10 +59,17 @@ body {
     margin-left: 20px;
 }
 
+/* TOP COLUMN */
+
+.sidebar-top-item {
+    height: calc(100% - 10%)
+}
+
+
 /* BOTTOM COLUMN */
 
 .sidebar-bottom-item {
-    align-items: flex-end;
+    height: 10%;
 }
 
 
