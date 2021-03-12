@@ -6,6 +6,7 @@
 
 body {
     font-family: sans-serif;
+    color: #fff;
 }
 
 /* UTILITIES ----------------------------------------------*/
@@ -35,15 +36,28 @@ body {
 /* MAIN [FLEX-BOX] ========================================*/
 
 .main-container {
-    height: 100vh;
+    height: calc(100vh - 100px);
 }
 
 
 /* SIDE BAR [FLEX-ITEM] -----------------------------------*/
 
 .sidebar {
-    background-color: lightblue;
+    background-color: #000;
     flex-basis: 250px;
+}
+
+.sidebar .logo {
+    width: 150px;
+    height: 100px;
+}
+
+
+.sidebar img {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+
 }
 
 
@@ -57,14 +71,15 @@ body {
 /* MAIN CONTENT [FLEX-ITEM] -------------------------------*/
 
 .main-content {
-    background-color: lightgreen;
+    background-color: #141922;
     flex-basis: 100%;
 }
 
 /* TOP BAR */
 .top-bar {
-    background-color: green;
+    background-color: #080b12;
     height: 100px;
+
 }
 
 .btn-upgrade {
@@ -83,6 +98,7 @@ body {
 /* FOOTER =================================================*/
 
 footer {
-    background-color: cyan;
+    background-color: #282828;
     height: 100px;
+    
 }
