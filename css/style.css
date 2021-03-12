@@ -3,3 +3,86 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: sans-serif;
+}
+
+/* UTILITIES ----------------------------------------------*/
+
+/* FLEX ---------------------------------------------------*/
+/* FLEX PARENT */
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+/* FLEX CHILDREN ------------------------------------------*/
+
+.grow-0 {
+    flex-grow: 0;
+}
+
+
+
+/* MAIN [FLEX-BOX] ========================================*/
+
+.main-container {
+    height: 100vh;
+}
+
+
+/* SIDE BAR [FLEX-ITEM] -----------------------------------*/
+
+.sidebar {
+    background-color: lightblue;
+    flex-basis: 250px;
+}
+
+
+
+
+
+
+
+
+
+/* MAIN CONTENT [FLEX-ITEM] -------------------------------*/
+
+.main-content {
+    background-color: lightgreen;
+    flex-basis: 100%;
+}
+
+/* TOP BAR */
+.top-bar {
+    background-color: green;
+    height: 100px;
+}
+
+.btn-upgrade {
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+/* FOOTER =================================================*/
+
+footer {
+    background-color: cyan;
+    height: 100px;
+}
