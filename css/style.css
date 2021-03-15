@@ -80,10 +80,12 @@ body {
 
 .sidebar-icons {
     width: 32px;
+    align-items: center;
 }
 
 .sidebar-icons img {
     width: 32px;
+    margin-top: 0;
 }
 
 /* BOTTOM COLUMN */
@@ -134,22 +136,17 @@ body {
 
 .content-menu {
     height: 100px;
-    background-color: #888;
     justify-content: center;
-}
-
-.nav-list {
-    
 }
 
 .nav-list li {
     display: inline-block;
+
 }
 
 .nav-list li a {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
 }
 
 
@@ -169,10 +166,17 @@ body {
     flex-basis: calc(100% / 6 - 15px);
     margin-right: 15px;
     margin-bottom: 15px;
-    height: 300px;
-    background-color: #aaa;
+    text-align: center;
 }
 
+.album-list .album img {
+    width: 250px;
+    cursor: pointer;
+}
+
+.album-list .album .round-img {
+    border-radius: 50%;
+}
 
 
 
