@@ -69,6 +69,8 @@ body {
 
 .sidebar-in-container {
     height: calc(100% - 100px);
+    padding: 0 20px;
+    z-index: -1;
 }
 
 /* TOP COLUMN */
@@ -79,16 +81,35 @@ body {
 }
 
 .sidebar-icons {
+    position: relative;
     line-height: 40px;
     align-items: center;
     color: #707378;
     font-weight: bold;
 }
 
+
 .sidebar-icons:hover:not(.download, .john) {
     border-left: 2px solid lime;
+}
+
+.sidebar-icons:hover {
+
     color: #fff;
     cursor: pointer;
+}
+
+.sidebar-icons-hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    height: 100%;
+    width: 2px;
+    background-color: lime;
+    z-index: 1;
+
+    /* border-left: 2px solid lime; */
 }
 
 .sidebar-icons a {
@@ -98,7 +119,6 @@ body {
 }
 
 .sidebar-icons i {
-    margin-left: 20px;
     padding-right: 10px;
     font-size: 32px;
 }
@@ -111,18 +131,18 @@ body {
     width: 32px;
     margin-top: 0;
     margin-right: 10px;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 .sidebar-top-item h3 {
     text-transform: uppercase;
     margin-top: 20px;
-    margin-left: 20px;
     margin-bottom: 20px;
     font-size: 14px;
 }
 
 .sidebar-top-item ul {
-    margin-left: 20px;
     list-style: none;
 }
 
@@ -159,6 +179,7 @@ body {
     padding-left: 0;
     width: 16px;
 }
+
 
 
 
