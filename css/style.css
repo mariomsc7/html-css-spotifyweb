@@ -85,7 +85,7 @@ body {
     font-weight: bold;
 }
 
-.sidebar-icons:hover {
+.sidebar-icons:hover:not(.download, .john) {
     border-left: 2px solid lime;
     color: #fff;
     cursor: pointer;
@@ -147,11 +147,17 @@ body {
     justify-content: flex-end;
     align-content: space-around;
     height: 100px;
+    padding: 0 10px;
 }
 
 .sidebar-icons.download {
-    margin-bottom: 30px;
     border-bottom: 1px solid #fff;
+}
+
+.sidebar-icons.download img,
+.sidebar-icons.john img {
+    padding-left: 0;
+    width: 16px;
 }
 
 
@@ -216,6 +222,7 @@ body {
 }
 
 .nav-list li a {
+    position: relative;
     text-decoration: none;
     text-transform: uppercase;
     color: #707378;
@@ -223,9 +230,19 @@ body {
     font-weight: bolder;
 }
 
+.half-border {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    height: 2px;
+    width: 50%;
+    background-color: lime;
+    z-index: 10;
+}
+
 .nav-list li a:hover {
     color: #fff;
-    border-bottom: 2px solid lime;
+    /* border-bottom: 2px solid lime; */
 }
 
 /* ALBUMS */
