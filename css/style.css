@@ -144,11 +144,15 @@ body {
 /* BOTTOM COLUMN */
 
 .sidebar-bottom-item {
+    justify-content: flex-end;
+    align-content: space-around;
     height: 100px;
-    background-color: #888;
 }
 
-
+.sidebar-icons.download {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #fff;
+}
 
 
 
@@ -201,7 +205,7 @@ body {
 /* TOP NAVIGATION */
 
 .content-menu {
-    height: 100px;
+    height: 50px;
     justify-content: center;
     padding-top: 20px;
 }
@@ -227,11 +231,11 @@ body {
 /* ALBUMS */
 
 .content-album {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .content-album h2 {
-    margin: 30px 0;
+    margin-bottom: 30px;
 }
 
 .content-album p {
