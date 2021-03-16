@@ -31,7 +31,9 @@ body {
     flex-grow: 0;
 }
 
-
+.grow-1 {
+    flex-grow: 1;
+}
 
 /* MAIN [FLEX-BOX] ========================================*/
 
@@ -408,4 +410,60 @@ footer {
     width: 70px;
     height: 100%;
     background-color: #fff;
+}
+
+/* RIGHT */
+
+.footer-right {
+    align-items: center;
+}
+
+.right-icons a {
+    color: #fff;
+    padding-right: 15px;
+}
+
+.progress-bar-2 {
+    background-color: gray;
+    width: 100px;
+    height: 3px;
+}
+
+.progress-done-2 {
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+}
+
+
+
+
+
+/* MEDIAQUERY */
+
+@media screen and (max-width: 552px) {
+    
+    .sidebar {
+        flex-basis: 50px;
+    }
+    
+    .sidebar .logo .logo-big {
+        display: none;
+    }
+
+    .sidebar .logo .logo-small {
+        display: block;
+        width: 32px;
+    }
+}
+
+
+@media screen and (min-width: 553px) {
+    .sidebar .logo .logo-big {
+        display: block;
+    }
+
+    .sidebar .logo .logo-small {
+        display: none;
+    }
 }
