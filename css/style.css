@@ -328,7 +328,7 @@ body {
 }
 
 .album-list .album img {
-    width: 250px;
+    width: 200px;
     cursor: pointer;
 }
 
@@ -383,7 +383,6 @@ footer {
 
 .left-icons {
     margin-left: 30px;
-    
 }
 
 .left-icons i {
@@ -430,7 +429,7 @@ footer {
 }
 
 .progress-done {
-    width: 70px;
+    width: 100px;
     height: 100%;
     background-color: #fff;
 }
@@ -462,10 +461,133 @@ footer {
 
 
 
-/* MEDIAQUERY */
+/* MEDIAQUERY =============================================*/
+
+/* 1200px > lg (reset) ------------------------------------*/
+
+@media screen and (min-width: 1200px) {
+    .album-list .album {
+        flex-basis: calc(100% / 6 - 15px);
+        margin-right: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}
+
+/* < 1199px md --------------------------------------------*/
+
+@media screen and (max-width: 1199px) {
+    .album-list .album {
+        flex-basis: calc(100% / 4 - 15px);
+        margin-right: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .progress-bar {
+        background-color: gray;
+        width: 250px;
+        height: 3px;
+        border-radius: 50px;
+    }
+    
+    .progress-done {
+        width: 30px;
+        height: 100%;
+        background-color: #fff;
+    }
+}
+
+/* < 768px s ----------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+    .album-list .album {
+        flex-basis: calc(100% / 2 - 15px);
+        margin-right: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+        /* FOOTER */
+    /* PROGRESS BAR */
+    .progress-bar {
+        background-color: gray;
+        width: 170px;
+        height: 3px;
+        border-radius: 50px;
+    }
+    
+    .progress-done {
+        width: 30px;
+        height: 100%;
+        background-color: #fff;
+    }
+
+    .progress-bar-2 {
+        background-color: gray;
+        width: 50px;
+        height: 3px;
+        margin-right: 10px;
+    }
+    
+    .progress-done-2 {
+        width: 10px;
+        height: 100%;
+        background-color: #fff;
+    }
+
+    /* LEFT ICONS */
+
+    .footer-left {
+        margin-left: 10px;
+    }
+
+    .left-icons {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 0;
+        margin-left: 15px;
+    }
+
+    /* CENTER ICONS*/
+
+    .mid-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .mid-icons a {
+        font-size: 16px;
+    }
+
+    .mid-icons a:nth-child(3) {
+        font-size: 20px;
+    }
+
+    .time-left,
+    .time-right {
+        font-size: 12px;
+    }
+
+    /* RIGHT ICONS */
+
+    .footer-right {
+        justify-content: flex-end;
+    }
+
+    .right-icons a {
+        font-size: 14px;
+    }
+
+} 
+
+
+/* < 601px xs ---------------------------------------------*/
 
  @media screen and (max-width: 601px) {
-    
+
     .sidebar {
         flex-basis: 50px;
     }
@@ -478,15 +600,96 @@ footer {
         width: 32px;
         display: inline-block;
     }
-}
 
-/* 
-@media screen and (min-width: 602px) {
-    .sidebar .logo .logo-big {
-        display: block;
-    }
-
-    .sidebar .logo .logo-small {
+    .sidebar-icons span {
         display: none;
     }
-}   */
+
+    .sidebar-icons.playlist {
+        display: none;
+    }
+
+    .album-list .album {
+        flex-basis: calc(100% / 2 - 15px);
+        margin-right: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    /* FOOTER */
+    /* PROGRESS BAR */
+    .progress-bar {
+        background-color: gray;
+        width: 100px;
+        height: 3px;
+        border-radius: 50px;
+    }
+    
+    .progress-done {
+        width: 15px;
+        height: 100%;
+        background-color: #fff;
+    }
+
+    .progress-bar-2 {
+        background-color: gray;
+        width: 50px;
+        height: 3px;
+        margin-right: 10px;
+    }
+    
+    .progress-done-2 {
+        width: 10px;
+        height: 100%;
+        background-color: #fff;
+    }
+
+    /* LEFT ICONS */
+
+    .footer-left {
+        margin-left: 10px;
+    }
+
+    .left-icons {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 0;
+        margin-left: 15px;
+    }
+
+    /* CENTER ICONS*/
+
+    .mid-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .mid-icons a {
+        font-size: 16px;
+    }
+
+    .mid-icons a:nth-child(3) {
+        font-size: 20px;
+    }
+
+    .time-left,
+    .time-right {
+        font-size: 12px;
+    }
+
+    /* RIGHT ICONS */
+
+    .footer-right {
+        justify-content: flex-end;
+    }
+
+    .right-icons a {
+        font-size: 14px;
+    }
+}
+
+
+ 
+
