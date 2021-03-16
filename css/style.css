@@ -331,21 +331,28 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    visibility: hidden;
+
 }
 
-.box-img .overlay:hover {
-    visibility: visible;
+.box-img .overlay > i {
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity .3s;
 }
 
- .box-img:hover {
-    opacity: 0.5;
-} 
+.box-img:hover .overlay i {
+    opacity: 1;
+}
 
 .album-list .album img {
     width: 200px;
     cursor: pointer;
+    transition: opacity .3s;
 }
+
+.box-img img:hover {
+    opacity: .5;
+} 
 
 .album-list .album .round-img {
     border-radius: 50%;
@@ -417,6 +424,10 @@ footer {
     padding-right: 20px;
 }
 
+.mid-icons a:hover {
+    color: lime;
+}
+
 .mid-icons a:nth-child(3) {
     font-size: 30px;
 }
@@ -438,12 +449,17 @@ footer {
     width: 400px;
     height: 3px;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 .progress-done {
     width: 100px;
     height: 100%;
     background-color: #fff;
+}
+
+.progress-done:hover {
+    background-color: lime;
 }
 
 /* RIGHT */
@@ -457,6 +473,10 @@ footer {
     padding-right: 15px;
 }
 
+.right-icons a:hover {
+    color: lime;
+}
+
 .progress-bar-2 {
     background-color: gray;
     width: 100px;
@@ -467,8 +487,12 @@ footer {
     width: 30px;
     height: 100%;
     background-color: #fff;
+    cursor: pointer;
 }
 
+.progress-done-2:hover {
+    background-color: lime;
+}
 
 
 
