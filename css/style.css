@@ -582,6 +582,8 @@ footer {
 
  @media screen and (max-width: 601px) {
 
+    /* SIDEBAR */
+
     .sidebar {
         flex-basis: 50px;
     }
@@ -599,10 +601,12 @@ footer {
         display: none;
     }
 
-    .sidebar-icons.playlist {
+    .sidebar-icons.playlist:not(.download, .john) {
         display: none;
     }
 
+    /* MAIN CONTENT */
+    
     .album-list .album {
         flex-basis: calc(100% / 2 - 15px);
         margin-right: 15px;
