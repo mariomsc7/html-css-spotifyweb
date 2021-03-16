@@ -320,6 +320,28 @@ body {
     text-align: center;
 }
 
+.box-img {
+    position: relative;
+    transition: .3s;
+}
+
+.box-img .overlay {
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.box-img .overlay:hover {
+    visibility: visible;
+}
+
+ .box-img:hover {
+    opacity: 0.5;
+} 
+
 .album-list .album img {
     width: 200px;
     cursor: pointer;
@@ -328,11 +350,6 @@ body {
 .album-list .album .round-img {
     border-radius: 50%;
 }
-
-.album img:hover {
-     
-}
-
 
 
 
