@@ -388,16 +388,19 @@ footer {
 .footer-left h4 {
     margin-left: 10px;
     font-size: 13px;
+    cursor: pointer;
 }
 
 .footer-left h5 {
     margin-left: 10px;
     font-size: 11px;
     color: #707378;
+    cursor: pointer;
 }
 
 .footer-left img {
     width: 42px;
+    cursor: pointer;
 }
 
 .left-icons {
@@ -407,6 +410,10 @@ footer {
 .left-icons i {
     color: #707378;
     padding-right: 10px;
+}
+
+.left-icons i:hover {
+    color: lime;
 }
 
 /* CENTER */
@@ -456,6 +463,18 @@ footer {
     width: 100px;
     height: 100%;
     background-color: #fff;
+    position: relative;
+}
+
+.progress-done:after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: -10%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
 }
 
 .progress-done:hover {
@@ -484,10 +503,22 @@ footer {
 }
 
 .progress-done-2 {
+    position: relative;
     width: 30px;
     height: 100%;
     background-color: #fff;
     cursor: pointer;
+}
+
+.progress-done-2:after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    right: -10%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
 }
 
 .progress-done-2:hover {
